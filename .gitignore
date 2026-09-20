@@ -1,0 +1,35 @@
+# python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+*.egg-info/
+
+# secrets and machine-local config
+.env
+.env.*
+
+# the simulator is an upstream dependency, cloned separately (see README)
+engine/
+
+# training and packaging outputs
+/runs/
+checkpoints/
+dist/
+wandb/
+*.npz
+*.safetensors
+
+# replay data is fetched, never committed
+data/replays/
+data/matches/
+data/sprint/
+data/sprint_replays/
+data/sprint-*.json
+data/apex/
+data/decoded/
+data/analysis/
+data/*.parquet
+
+.DS_Store
+.jax_cache/
